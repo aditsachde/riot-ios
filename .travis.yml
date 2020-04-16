@@ -1,6 +1,8 @@
 language: objective-c
-xcode_project: Riot.xcodeproj
-xcode_scheme: Riot
-xcode_destination: platform=iOS Simulator,OS=12.4,name=iPhone X
 os: osx
 osx_image: xcode10.3
+install:
+  - cd Riot 
+  - bundle install
+  - bundle exec pod install
+script: ./buildipa.sh
