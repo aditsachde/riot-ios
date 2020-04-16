@@ -1,6 +1,8 @@
 language: objective-c
 os: osx
 osx_image: xcode10.3
-install: cd Riot && bundle install && bundle exec pod install && cd ../
+install: 
+  - rm -rf .git/
+  - cd Riot && bundle install && bundle exec pod install && cd ../
 script: ./buildipa.sh
 deploy: brew install tree && tree ./
