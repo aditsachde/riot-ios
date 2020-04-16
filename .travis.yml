@@ -1,4 +1,6 @@
 language: objective-c
 xcode_project: Riot.xcodeproj
+xcode_scheme: Riot
+xcode_destination: platform=iOS Simulator,OS=13.4.1,name=iPhone X
 os: osx
 osx_image: xcode10.3
